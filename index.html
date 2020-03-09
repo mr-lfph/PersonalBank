@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bank </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="login-area">
+        <h2 class="text-center">Welcome to Personal Bank </h2>
+        <div class="submit-area">
+            <h>LogIn</h4>
+                <input type="text" class="form-control" placeholder="Enter User Name">
+                <br>
+                <input type="password" name="" id="" class="form-control" placeholder="Enter Password">
+                <br>
+                <button id="btnEnter" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <h2>Transaction Area</h2>
+    </div>
+    <script>
+        /*javascript event referrence mdn */
+        const btnEnter = document.getElementById("btnEnter");
+        btnEnter.addEventListener("click", function () {
+            const loginArea = document.getElementById("login-area");
+            loginArea.style.display = "none";
+            const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
+        });
+
+    </script>
+</body>
+</html>
